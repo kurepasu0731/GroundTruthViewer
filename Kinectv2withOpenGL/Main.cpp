@@ -91,8 +91,8 @@ void keyboard(unsigned char key, int x, int y)
 		  r = r - 0.1f;
 		  break;
 	  case 'q':
-		  kinect::kinect->Close();
-		  kinect::kinect->Release();
+		  //kinect::kinect->Close();
+		  //kinect::kinect->Release();
 		exit(0);
 		break;
 	}
@@ -274,7 +274,7 @@ int main(int argc, char **argv){
 
 
 	//xmlファイルのロード
-	loadFile("../groundtruth_1221349.xml");
+	loadFile("../groundtruth_1222032.xml");
 
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH); //ダブルバッファ、デブスバッファ用意
